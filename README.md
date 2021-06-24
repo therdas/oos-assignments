@@ -17,17 +17,17 @@ The objective of this assignment is to learn how to write some Simple JAVA Progr
 2. Write a program to read the price of an item in the decimal form (like 75.95) and print the output in paise (like 7595 paise).
 3. Write a program to convert the given temperature in Fahrenheit to Celsius using the following conversion formula: <p align="center"> C = (F-32)/1.8 </p>
 4. Write a program to determine sum of the following series for given value of n: (1 + 1/2 + 1/3 + …… + 1/n). Print the result up to two decimal places.
-5. [✳] Write a program to find the sum of digits and reverse of a given integer number (take input using command-line argument).
-6. Write a program to find the factorial of a given integer number using recursion (take input using command-line argument).
+5. [✳|A] Write a program to find the sum of digits and reverse of a given integer number (take input using command-line argument).
+6. [A] Write a program to find the factorial of a given integer number using recursion (take input using command-line argument).
 7. Write a program to show Fibonacci series up to n-th terms using recursion.
 8. Write a Program of Sum of Series (1+x+x2+x3+x4+………… up to n-th terms).
 9. Write a program to calculate the simple interest (si) while your inputs are principle (p), time in years (n) and rate of interest (r) [take input using command-line
 argument].
 10. [✳] Write a program to find the real roots of the quadratic equation ax2 + bx + c = 0 where a, b and c are constants.
 11. WAP to print all prime number within a given range.
-12. WAP to calculate GCD of two numbers.
-13. Write a program to show addition, subtraction and multiplication of two matrices.
-14. Write a program to find sum and average of several integers (in an array) using enhanced-for loop.
+12. [A] WAP to calculate GCD of two numbers.
+13. [A] Write a program to show addition, subtraction and multiplication of two matrices.
+14. [A] Write a program to find sum and average of several integers (in an array) using enhanced-for loop.
 Assignment-2 (one day)
 Objective:
 The objective of this assignment is to learn about Classes and Objects concept.
