@@ -24,7 +24,6 @@ public class Quadratic {
             return  (this.a >= 0 ? "" : "- ")  + Math.abs(this.a) + "x\u00B2 " + 
                 (this.b >= 0 ? "+" : "-") + " " + Math.abs(this.b) + "x " +
                 (this.c >= 0 ? "+" : "-") + " " + Math.abs(this.c);
-        else if ()
         return "";
     }
     public static void main(String[] args) {
