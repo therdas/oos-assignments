@@ -11,7 +11,7 @@ public class ExampleCaller {
         //Print the object
         System.out.println("The Description is: " + e.getDescription());
         System.out.println("The Data is: " + e.getData());
-        System.out.println("The Object is: \n" + e);
+        System.out.println("The Object is: \n" + e);        //e.toString() called implicitly.
 
         //Print statistics about the data in the object.
         e.printStats();
