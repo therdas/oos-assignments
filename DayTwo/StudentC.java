@@ -1,10 +1,10 @@
-import java.util.Scanner;
-
 public class StudentC {
     private static class Subject {
         String title;
         double internalMarks;
         double theoryMarks;
+
+        public Subject() {}
 
         public Subject(String t, int i, int th) {
             title = t; internalMarks = i; theoryMarks = th;
@@ -37,6 +37,8 @@ public class StudentC {
         this.college = college;
         this.university = university;
         this.subjects = new Subject[subjects.length];
+        for(int i = 0; i < subjects.length; ++i)
+            this.subjects[i] = new Subject();
         for(int i = 0; i < subjects.length; ++i) {
             this.subjects[i].copyFrom(subjects[i]);
         }
@@ -61,8 +63,8 @@ public class StudentC {
     public static void main(String[] args) {
         System.out.println("Enter the details of the two students: ");
         
-        StudentC a = new StudentC("Rahul Das", "Computer Science", "UCSTA", "Calcutta University", 4, new Subject("Computer Networks", 80,20), new Subject("SE", 70, 30), new Subject("DAA", 75, 25), new Subject("OOS", 80,25));
-        StudentC b = new StudentC("Rohan Chackraborty", "Computer Science", "UCSTA", "Calcutta University", 4, new Subject("Data Communications", 60,20), new Subject("ADS", 75, 30), new Subject("Architecture", 73, 25), new Subject("DBMS", 83,25));
+        StudentC a = new StudentC("Jhumpa Das", "Computer Science", "UCSTA", "Calcutta University", 35, new Subject("Computer Networks", 80,20), new Subject("SE", 70, 30), new Subject("DAA", 75, 25), new Subject("OOS", 75,25), new Subject("Compiler Design", 70, 30));
+        StudentC b = new StudentC("Rohan Chackraborty", "Computer Science", "UCSTA", "Calcutta University", 42, new Subject("Data Communications", 60,20), new Subject("ADS", 70, 30), new Subject("Architecture", 73, 25), new Subject("DBMS", 83,15));
         
         System.out.println("The given details are: ");
         a.print();

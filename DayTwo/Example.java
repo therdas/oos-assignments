@@ -9,12 +9,10 @@ public class Example {
         Scanner in = new Scanner(System.in);
         
         try {
-
             System.out.print("Enter description of the number: ");
             this.description = in.nextLine();
             System.out.print("Enter the number: ");
             this.data = in.nextInt();
-
         } catch(Exception err) {
             System.out.println("Invalid Input!");
         } finally {

@@ -28,7 +28,6 @@ public class BankAccount {
         accountNo = sc.nextLine();
         System.out.print("Balance: ");
         balance = sc.nextDouble();
-        sc.close();
     }
 
     public void deposit(double amount) {
@@ -47,23 +46,24 @@ public class BankAccount {
     public void print() {
         System.out.println("Name: " + name +
                            "\nAddress: " + address +
-                           "\nAccount No.: "+ accountNo +
                            "\nBalance: " + balance);
     }
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         BankAccount b = new BankAccount();
         System.out.println("Enter account details:");
         b.initialize();
-        System.out.println("Depositing 500 Rupees");
-        b.deposit(500.00);
+        System.out.println("Enter amount to deposit: ");
+        b.deposit(in.nextDouble());
         b.print();
-        System.out.println("Withdrawing 300 Rupees");
-        b.withdraw(300.00);
+        System.out.println("Enter amount to withdraw: ");
+        b.withdraw(in.nextDouble());
         b.print();
-        System.out.println("Withdrawing 500 Rupees");
-        b.withdraw(500.00);
+        System.out.println("Trying to overdraw account: ");
+        b.withdraw(b.balance + 100.00);
         System.out.println("Displaying account details: ");
         b.print();
+        in.close();
     }
 }

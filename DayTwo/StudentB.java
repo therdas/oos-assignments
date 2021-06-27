@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class StudentB {
-    private class Subject {
+    private static class Subject {
         String title;
         double internalMarks;
         double theoryMarks;
 
         public String toString() {
-            return "Subject: " + title + ",\tInternal Marks: " + internalMarks + ",\tTheory Marks: " + theoryMarks;
+            return "Subject: " + title + ",\tInternal Marks: " + internalMarks + ",\tTheory Marks: " + theoryMarks + ",\tTotal marks: " + (internalMarks + theoryMarks);
         }
 
         public void copyFrom(Subject other) {
@@ -33,7 +33,10 @@ public class StudentB {
         this.college = college;
         this.university = university;
         this.subjects = new Subject[6];
-        for(int i = 0; i < 5; ++i) {
+        for(int i = 0; i < 6; ++i)
+            this.subjects[i] = new Subject();
+
+        for(int i = 0; i < 6; ++i) {
             this.subjects[i].copyFrom(subjects[i]);
         }
     }
@@ -57,12 +60,15 @@ public class StudentB {
     public static StudentB inputAndBuild() {
         int rollNo;
         String name, stream, college, university;
-        Subject[] subjects = new Subject[5];
-
+        Subject[] subjects = new Subject[6];
+        for(int i = 0; i < 6; ++i)
+            subjects[i] = new Subject();
+        
         //Input A:
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Student Roll No.: ");
         rollNo = sc.nextInt();
+        sc.nextLine();
         System.out.print("Enter Student Name: ");
         name = sc.nextLine();
         System.out.print("Enter Student Stream: ");
@@ -80,9 +86,8 @@ public class StudentB {
             subjects[i].internalMarks = sc.nextDouble();
             System.out.print("Enter Theory Marks: ");
             subjects[i].theoryMarks = sc.nextDouble();
+            sc.nextLine();
         }
-
-        sc.close();
 
         return new StudentB(name, stream, college, university, rollNo, subjects);
     }
