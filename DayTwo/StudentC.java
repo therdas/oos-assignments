@@ -11,7 +11,7 @@ public class StudentC {
         double theoryMarks;
 
         //Parameterless constructor
-        public Subject() {}
+        public Subject() {title = "";}
 
         //Parameterised constructor
         public Subject(String t, int i, int th) {
@@ -77,11 +77,26 @@ public class StudentC {
 
     //Static main method to drive instances of the class
     public static void main(String[] args) {
-        System.out.println("Enter the details of the two students: ");
-        
         //Make two objects
-        StudentC a = new StudentC("Jhumpa Das", "Computer Science", "UCSTA", "Calcutta University", 35, new Subject("Computer Networks", 80,20), new Subject("SE", 70, 30), new Subject("DAA", 75, 25), new Subject("OOS", 75,25), new Subject("Compiler Design", 70, 30));
-        StudentC b = new StudentC("Rohan Chackraborty", "Computer Science", "UCSTA", "Calcutta University", 42, new Subject("Data Communications", 60,20), new Subject("ADS", 70, 30), new Subject("Architecture", 73, 25), new Subject("DBMS", 83,15));
+        StudentC a = new StudentC("Jhumpa Das",
+                                  "Computer Science", 
+                                  "UCSTA", 
+                                  "Calcutta University", 
+                                  35, 
+                                  new Subject("Computer Networks", 80,20), 
+                                  new Subject("SE", 70, 30), 
+                                  new Subject("DAA", 75, 25), 
+                                  new Subject("OOS", 75,25), 
+                                  new Subject("Compiler Design", 70, 30));
+        StudentC b = new StudentC("Rohan Chackraborty", 
+                                  "Computer Science", 
+                                  "UCSTA", 
+                                  "Calcutta University", 
+                                  42, 
+                                  new Subject("Data Communications", 60,20), 
+                                  new Subject("ADS", 70, 30), 
+                                  new Subject("Architecture", 73, 25), 
+                                  new Subject("DBMS", 83,15));
         
         //Print details
         System.out.println("The given details are: ");

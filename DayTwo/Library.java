@@ -46,11 +46,6 @@ public class Library {
         this.b = new Book(b);
     }
 
-    //Print the book
-    void printBook(Book b) {
-        System.out.println("Book: " + b);
-    }
-
     //Make a clone of the library
     /*
     ** (!) This function returns a reference to same class's
