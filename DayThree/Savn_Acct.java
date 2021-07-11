@@ -9,7 +9,7 @@ public class Savn_Acct extends Account {
     }
 
     //Method to calculate interest
-    public void calculateInterest(int months) {
+    public double calculateInterest(int months) {
         double interest = balance * Math.pow(1 + rate/12, months); //Calculate interest on account
 
         //Print the interest calculated
@@ -17,5 +17,6 @@ public class Savn_Acct extends Account {
 
         //Deposit the interest
         super.deposit(interest);
+        return interest;
     }
 }

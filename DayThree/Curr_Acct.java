@@ -22,15 +22,17 @@ public class Curr_Acct extends Account {
     }
 
     //Method to check if a account has appropriate minimum balance
-    public void checkMinimumBalance() {
+    public boolean checkMinimumBalance() {
         //If balance is below 1000
         if(balance < 1000){
             balance -= 100;             //Impose fine
             fine += 100;                //and keep track of how much the customer has been fined
             System.out.println("Account balance found under INR 1000, imposing INR 100 fine..."); //Print message
+            return false;
         } else {
             //Meets requirements, let customer know
             System.out.println("Account meets minimum balance requirements.");
+            return true;
         }
     }
 
