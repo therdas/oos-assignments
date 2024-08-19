@@ -1,13 +1,6 @@
-# OOS Assignments
-- [x] Assignment 1 
-- [ ] Assignment 2
-- [ ] Assignment 3
-- [ ] Assignment 4
-- [ ] Assignment 5
-- [ ] Assignment 6
-- [ ] Assignment 7
-- [ ] Assignment 8
-- [ ] Assignment 9
+# OOS Lab Assignments
+
+This repository has a bunch of programs that explore various normal/standard concepts with Object Oriented systems and the Java programming language.
 
 ## Assignment List
 ### Assignment-1 (one day)
